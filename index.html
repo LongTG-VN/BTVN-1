@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__content">
+        <div class="header__input">
+          <input type="number" id="inputValue" required />
+          <button onclick="inputValue()">Thêm số</button> <br />
+          <!-- <input type="text" id="outputValue" value="mãng giá trị" readonly /> -->
+          <span id="outputArray"></span>
+        </div>
+        <div class="header__output">
+          kết quả
+          <span id="outputValue"></span>
+        </div>
+      </div>
+
+      <section class="body">
+        <div class="body__content">
+          <div class="function__item">
+            <button onclick="sum()">Cộng các giá trị của mảng</button>
+          </div>
+          <div class="function__item">
+            <button onclick="countNumberPositive()">đếm số lớn hơn 0</button>
+          </div>
+          <div class="function__item">
+            <button onclick="findNumberSmallest()">số nhỏ nhất</button>
+          </div>
+          <div class="function__item">
+            <button onclick="findNumberSmallestAndPositive()">
+              số nhỏ nhất và lớn hơn 0
+            </button>
+          </div>
+          <div class="function__item">
+            <button onclick="findEvenLastNumber()">số chẵn đầu tiên</button>
+          </div>
+          <div class="function__item">
+            vị trí 1 <input type="number" id="value1" /> <br />
+            vị trí 2 <input type="number" id="value2" /> <br />
+            <button onclick="swap()">đổi chổ</button>
+          </div>
+          <div class="function__item">
+            <button onclick="sort()">sort</button>
+          </div>
+          <div class="function__item">
+            <button onclick="findPrime()">Prime</button>
+          </div>
+          <div class="function__item">
+            <input type="number" id="inputValueOfFloat" required />
+            <button onclick="inputValueOfFloat()">Thêm số</button> <br />
+            <!-- <input type="text" id="outputValue" value="mãng giá trị" readonly /> -->
+            <span id="outputArrayOfFloat"></span> <br />
+            <button onclick="findInteger()">tìm số nguyên tố</button>
+          </div>
+          <div class="function__item">
+            <button onclick="compare()">Compare</button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script src="index.js"></script>
+  </body>
+</html>
